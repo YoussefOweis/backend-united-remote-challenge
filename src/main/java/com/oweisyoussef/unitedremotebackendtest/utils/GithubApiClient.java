@@ -29,7 +29,7 @@ public class GithubApiClient {
     public static List<GithubApiResult> getAllTopRepositories() {
         StringBuilder githubApiEndpoint = new StringBuilder(GITHUB_API_SEARCH_TRENDING);
         githubApiEndpoint.append("?")
-                .append("q=created:>"+getCreatedDate())
+                .append("q=created:>" + getCreatedDate())
                 .append("&")
                 .append("sort=stars")
                 .append("&")
@@ -42,9 +42,9 @@ public class GithubApiClient {
         return githubApiResponse.getItems();
     }
 
-    private static String getCreatedDate(){
+    private static String getCreatedDate() {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         LocalDate localDate = LocalDate.now().minusDays(30);
-        return  dtf.format(localDate);
+        return dtf.format(localDate);
     }
 }

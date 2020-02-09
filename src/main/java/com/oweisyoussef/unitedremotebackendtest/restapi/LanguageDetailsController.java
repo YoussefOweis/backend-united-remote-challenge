@@ -13,14 +13,12 @@ public class LanguageDetailsController {
     LanguageDetailsService languageDetailsService;
 
     @RequestMapping("/languages")
-    public List<LanguageDetails> getAllLanguageDetails()
-    {
+    public List<LanguageDetails> getAllLanguageDetails() {
         return languageDetailsService.getAllLanguageDetails();
     }
 
     @RequestMapping("/languages/{language}")
-    public LanguageDetails getLanguageDetails(@PathVariable String language)
-    {
+    public LanguageDetails getLanguageDetails(@PathVariable String language) {
         return languageDetailsService.getLanguageDetails(language);
     }
 
