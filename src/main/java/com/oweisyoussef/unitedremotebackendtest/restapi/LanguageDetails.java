@@ -9,26 +9,18 @@ public class LanguageDetails implements Comparable {
     private int RepositoryCount;
     private int rank;
 
-    public String getName() {
-        return name;
-    }
 
-    public List<String> getRepositoryNameList() {
-        return repositoryNameList;
-    }
-
-    public int getRepositoryCount() {
-        return RepositoryCount;
-    }
-
-    public int getRank() {
-        return rank;
+    @Override
+    public int compareTo(Object o) {
+        LanguageDetails languageDetails = (LanguageDetails) o;
+        return languageDetails.getRepositoryCount() - getRepositoryCount();
     }
 
     public LanguageDetails() {
     }
-    public LanguageDetails(String _name,List<String> _repositoryNameList) {
-        this.name =_name;
+
+    public LanguageDetails(String _name, List<String> _repositoryNameList) {
+        this.name = _name;
         this.repositoryNameList = _repositoryNameList;
         this.RepositoryCount = _repositoryNameList.size();
     }
@@ -51,9 +43,20 @@ public class LanguageDetails implements Comparable {
     }
 
 
-
-    @Override
-    public int compareTo(Object o) {
-        return 0;
+    public String getName() {
+        return name;
     }
+
+    public List<String> getRepositoryNameList() {
+        return repositoryNameList;
+    }
+
+    public int getRepositoryCount() {
+        return RepositoryCount;
+    }
+
+    public int getRank() {
+        return rank;
+    }
+
 }
