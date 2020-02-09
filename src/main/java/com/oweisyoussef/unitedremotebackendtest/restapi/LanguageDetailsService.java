@@ -34,6 +34,13 @@ public class LanguageDetailsService {
             languageList.get(i).setRank(i + 1);
         }
 
+        for(int i = 0;i <languageList.size()- 1;i++){
+            if(languageList.get(i).getRepositoryCount() == languageList.get(i +1).getRepositoryCount() ){
+                for(int j = i + 1 ; j< languageList.size();j++){
+                    languageList.get(j).setRank(languageList.get(j).getRank() - 1);
+                }
+            }
+        }
         return languageList;
     }
 
