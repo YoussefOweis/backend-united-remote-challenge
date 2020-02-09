@@ -19,6 +19,8 @@ public class LanguageDetailsService {
                 MapUtil.addToList(languageDetailsMap, languageName, repositoryName);
             }
         }
+
+
         Iterator<Map.Entry<String, ArrayList<String>>> itr = languageDetailsMap.entrySet().iterator();
         List<LanguageDetails> languageList = new ArrayList<>();
         while (itr.hasNext()) {
@@ -37,6 +39,14 @@ public class LanguageDetailsService {
 
 
     public LanguageDetails getLanguageDetails(String languageName) {
-        return null;
+        List<LanguageDetails> languageDetailsList = getAllLanguageDetails();
+        LanguageDetails languageDetails = null;
+        for (int i = 0; i < languageDetailsList.size(); i++) {
+            if (languageDetailsList.get(i).getName().equals(languageName)) {
+                languageDetails = languageDetailsList.get(i);
+                break;
+            }
+        }
+        return languageDetails;
     }
 }
