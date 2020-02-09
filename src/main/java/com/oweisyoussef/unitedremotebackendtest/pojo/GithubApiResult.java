@@ -86,7 +86,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 "default_branch",
 "score"
 })
-public class Item {
+public class GithubApiResult {
 
 @JsonProperty("id")
 private Integer id;

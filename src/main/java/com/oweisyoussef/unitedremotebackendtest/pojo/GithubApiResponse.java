@@ -23,7 +23,7 @@ private Integer totalCount;
 @JsonProperty("incomplete_results")
 private Boolean incompleteResults;
 @JsonProperty("items")
-private List<Item> items = null;
+private List<GithubApiResult> items = null;
 @JsonIgnore
 private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -48,12 +48,12 @@ this.incompleteResults = incompleteResults;
 }
 
 @JsonProperty("items")
-public List<Item> getItems() {
+public List<GithubApiResult> getItems() {
 return items;
 }
 
 @JsonProperty("items")
-public void setItems(List<Item> items) {
+public void setItems(List<GithubApiResult> items) {
 this.items = items;
 }
 
