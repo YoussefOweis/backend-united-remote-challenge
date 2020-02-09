@@ -15,7 +15,7 @@ public class MapUtil {
             items.put(key, itemsList);
         } else {
             // add if item is not already in list
-            if (itemsList.contains(value)) {
+            if (!itemsList.contains(value)) {
                 itemsList.add(value);
             }
         }

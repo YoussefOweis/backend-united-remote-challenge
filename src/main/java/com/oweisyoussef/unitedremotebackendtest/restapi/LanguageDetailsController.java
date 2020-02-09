@@ -19,9 +19,9 @@ public class LanguageDetailsController {
     }
 
     @RequestMapping("/languages/{language}")
-    public LanguageDetails getLanguageDetails(@PathVariable String Language)
+    public LanguageDetails getLanguageDetails(@PathVariable String language)
     {
-        return languageDetailsService.getLanguageDetails(Language);
+        return languageDetailsService.getLanguageDetails(language);
     }
 
 }
