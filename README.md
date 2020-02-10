@@ -16,7 +16,7 @@ localhost:8083/languages
 
 Get JavaScript language details  
 localhost:8083/languages/JavaScript  
-![localhost:8083/languages/JavaScript](https://github.com/YoussefOweis/backend-united-remote-challenge/blob/master/images/getAllLanguagesDetails.PNG?raw=true) 
+![localhost:8083/languages/JavaScript](https://github.com/YoussefOweis/backend-united-remote-challenge/blob/master/images/getJavaScriptDetails.PNG?raw=true) 
 
 ### Requirement
 -	Install [Java 8]( https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
@@ -35,7 +35,7 @@ The architecture used for this project is a MVC architecture where the Controlle
 -	Maven
 
 ### Troubleshooting
-In case the port 8085 is already used go to the application.properties file located in the resource folder and specify an available port 
+In case the port 8083 is already used go to the application.properties file located in the resource folder and specify an available port 
 
 I used my own Token, in case you faced troubles with my token you can change it in Utils.GithubApiClient line 18 (OAUTH_TOKEN) 
 ### TODO
