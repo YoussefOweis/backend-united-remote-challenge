@@ -11,12 +11,12 @@ Create a REST API that list:
 ###Demo:
 Get all languages details  
 localhost:8085/languages  
-![localhost:8085/languages](https://github.com/YoussefOweis/backend-united-remote-challenge/getAllLanguagesDetails.png) 
+![localhost:8085/languages](https://github.com/YoussefOweis/backend-united-remote-challenge/images/getAllLanguagesDetails.png) 
 
 
 Get JavaScript language details  
 localhost:8085/languages/JavaScript  
-![localhost:8085/languages/JavaScript](https://github.com/YoussefOweis/backend-united-remote-challenge/getJavaScriptDetails.png) 
+![localhost:8085/languages/JavaScript](https://github.com/YoussefOweis/backend-united-remote-challenge/images/getJavaScriptDetails.png) 
 
 ###Requirement
 -	Install [Java 8]( https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
