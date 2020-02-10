@@ -15,7 +15,7 @@ import java.util.List;
 
 @Service
 public class GithubApiClient {
-    private static final String OAUTH_TOKEN = "2e85e24f8c35d42518d885ffd86b70a65d4781af";
+    private static final String OAUTH_TOKEN = "0cb2e333ad1d51b6084ed6a789e40509ebe23761";
     private static final String GITHUB_API_SEARCH_TRENDING = "https://api.github.com/search/repositories";
 
     private static GithubApiResponse get(String url) {
